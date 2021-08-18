@@ -1372,6 +1372,6 @@ local M = require(Modules:WaitForChild("AnimationCore"))
 local WC = require(Modules:WaitForChild("WeaponCore"))
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local Char = game.Players.LocalPlayer.Character
-Mouse.Button1Down:Connect(function()
-WC.ThrowKnife(Char, Char, Mouse.Hit.p, "KNIFENAME613")
+KT.Activated:Connect(function()
+    WC.ThrowKnife(Char, Char, Mouse.Hit.p, "KNIFENAME613")
 end)
